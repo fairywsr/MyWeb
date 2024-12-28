@@ -1,8 +1,9 @@
 import React from 'react'
-import {Link, NavLink} from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
 function Header() {
   return (
+    // Main header container with styling
     <header className="text-gray-600 body-font">
   <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
     <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
@@ -10,7 +11,7 @@ function Header() {
       <span className="text-small">Name Decide nhi huwa abhi tk is lawaris k</span>
     </a>
     <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
-      <NavLink to= '/'  className= {({isActive}) =>`mr-5 hover:text-gray-900`}>Home</NavLink>
+      <NavLink to= '/home'  className= {({isActive}) =>`mr-5 hover:text-gray-900`}>Home</NavLink>
       <NavLink to='/team' className= {({isActive}) => `mr-5 hover:text-gray-900`}>Team </NavLink>
       <NavLink to='/projects' className= {({isActive}) => `mr-5 hover:text-gray-900`}>Projects</NavLink>
       <NavLink to='/services' className= {({isActive}) => `mr-5 hover:text-gray-900`}>Services</NavLink>
@@ -22,7 +23,6 @@ function Header() {
 </header>
 
   )
-
 }
 
 export default Header
